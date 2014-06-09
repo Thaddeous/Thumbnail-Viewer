@@ -37,7 +37,8 @@ var ThumbnailView = Backbone.View.extend({
   // this showDetailView is a constructor function only existing within the ThumbnailView
   // it reads ({Photo: thumbnailView.Photo})   No idea how this works or why its necessary
   showDetailView: function(){
-    new DetailView({model: this.model})
+    detailInstance.remove()
+    detailInstance = new DetailView({model: this.model})
   }
 })
 

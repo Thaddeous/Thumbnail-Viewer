@@ -1,7 +1,24 @@
-var showThumbnails = new PhotoCollection();
+var photos = new PhotoCollection();
 
-	showThumbnails.fetch().done(function(){
-		showThumbnails.each(function(url){
-			new ThumbnailView({model:url})
+ photos.fetch().done(function(){
+	 photos.each(function(url){
+			thumbnailInstance = new ThumbnailView({model:url})
 		});
+			detailInstance = new DetailView({model:photos.last()})
 	});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// app = new AppRouter()
+	// Backbone.history.start();

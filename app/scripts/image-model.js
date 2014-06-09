@@ -5,7 +5,14 @@
 // Not sure if "id" always has to be the paramater or
 // What else could be a parameter
 var Photo = Backbone.Model.extend({
-  idAttribute: "_id"
+  idAttribute: "_id",
+
+  defaults: {
+
+  	title: "",
+  	caption: "",
+  	author: "",
+  }
 });
 
  
