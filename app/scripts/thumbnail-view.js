@@ -3,7 +3,7 @@
 // The view is also a constructor
 var ThumbnailView = Backbone.View.extend({
   // The className is a built in function that designates a class
-  // to this.el   	
+  // to this.el     
   className: 'thumbnail',
   // here we create a template using underscore that links to html and scripts
   template: _.template($('.thumbnail-template').text()),
@@ -11,7 +11,7 @@ var ThumbnailView = Backbone.View.extend({
   // I believe events are native like .click and are put in html
   // I dont understand "binding an event to something". Makes no sense.
   events: {
-  	// This event click is referencing a fuction. saying once clicked run the function 
+    // This event click is referencing a fuction. saying once clicked run the function 
     "click" : "showDetailView"
   },
   
