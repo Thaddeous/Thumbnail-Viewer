@@ -155,7 +155,7 @@ body {
 
 .add-image-input h1, .add-new-image-input h1 {
     margin-right: 6px;
-    margin-left: 5px;
+    margin-left: 3px;
     margin-top: 0px;
     margin-bottom: 2px;
     padding: 0px;
@@ -163,10 +163,26 @@ body {
 
 .add-image-input h6, .add-new-image-input h6 {
     margin-right: 6px;
+    margin-left: 4px;
+    margin-top: -5px;
+    margin-bottom: 12px;
+    padding: 0px;
+}
+
+.add-image-input h3, .add-new-image-input h3 {
+    margin-right: 6px;
     margin-left: 5px;
     margin-top: -5px;
     margin-bottom: 2px;
     padding: 0px;
+}
+
+.title-holder {
+    height: 30px;
+    width: 11%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
 
 
@@ -178,7 +194,7 @@ body {
 
 .url-input, .author-input, .title-input, .caption-input, .url-input-add, .author-input-add, .title-input-add, .caption-input-add {
     height: 30px;
-    width: 98%;
+    width: 87%;
     padding-top: 2px;
     padding-left: 6px;
     padding-bottom: 4px;
@@ -186,6 +202,7 @@ body {
     line-height: 26px;
     border-radius: 4px;
     margin-bottom: 6px;
+    display: inline;
 }
 
 .button {
