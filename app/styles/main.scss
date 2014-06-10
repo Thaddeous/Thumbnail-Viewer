@@ -142,20 +142,33 @@ body {
     letter-spacing: 0.8px;
 }
 
-.add-image-input {
-    padding: 3px;
+.add-image-input, .add-new-image-input {
     color: #BF140F;
     text-align: left;
-    margin-top: 20px;
+    border: 2px solid #eeeeee;
+    border-radius: 6px;
+    margin-top: 15px;
+    height: 278px;
+    padding: 10px;
+    box-shadow: 1px 1px 3px #dddddd;
 }
 
-.add-image-input h1 {
+.add-image-input h1, .add-new-image-input h1 {
     margin-right: 6px;
-    margin-left: 6px;
+    margin-left: 5px;
     margin-top: 0px;
     margin-bottom: 2px;
     padding: 0px;
 }
+
+.add-image-input h6, .add-new-image-input h6 {
+    margin-right: 6px;
+    margin-left: 5px;
+    margin-top: -5px;
+    margin-bottom: 2px;
+    padding: 0px;
+}
+
 
 .input-text {
     font-size: 22px;
@@ -163,7 +176,7 @@ body {
     padding: 0;
 }
 
-.url-input, .author-input, .title-input {
+.url-input, .author-input, .title-input, .caption-input, .url-input-add, .author-input-add, .title-input-add, .caption-input-add {
     height: 30px;
     width: 98%;
     padding-top: 2px;
@@ -175,42 +188,45 @@ body {
     margin-bottom: 6px;
 }
 
-.caption-input {
-    height: 30px;
-    width: 84%;
-    padding-top: 2px;
-    padding-left: 6px;
-    padding-bottom: 4px;
-    font-size: 18px;
-    line-height: 26px;
+.button {
+    width: 115px;
+    height: 40px;
     border-radius: 4px;
-    margin-left: 0px;
-}
-
-.status {
-    width: 13%;
-    border-radius: 4px;
+    border: 1px solid #999999;
     padding: 0;
     margin-top: 0px;
-    height: 39px;
-    font-size: 14px;
+    font-size: 15px;
     margin-bottom: 6px;
+    color: #000000;
+    background-color: #cccccc;
+    text-align: center;
+    text-decoration: none;
+    line-height: 40px;
 }
 
-.status:hover {
-    box-shadow: 0px 0px 2px #777777;
+.button:hover {
+    box-shadow: 0px 0px 2px #333333;
 }
+
+.update-button, .clear-button, .post-button {
+    float: right;
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
 .right-container {
     float: left;
     width: 51%; 
     height: auto;
+    height: 950px;
+    overflow: scroll;
 }
 
 .thumbnail {
     display: inline;
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 1210px) {
 
     .left-container {
         width: 99%;

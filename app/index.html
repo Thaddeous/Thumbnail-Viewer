@@ -47,24 +47,30 @@
                     <div class="spacing">
                         <div class="author-box"><strong>Author: </strong> <%= author %></div>
                         <div class="title-box"><strong>Title: </strong> <%= title %></div>
-                        <div class="caption-box"><strong>Jibber: </strong> <%= caption %></div>
+                        <div class="caption-box"><strong>Jibber: </strong> "<%= caption %>"</div>
                     </div>
                 </div>
                 <div class="add-image-input">
-                    <h1>Add an Image!</h1> 
-                    <form name="Add-image-form" action="image.model.js" onsubmit="return checkName() && checkEmail()">
-                        <input class="url-input" placeholder="Insert the Image URL" type="text">
-                        <input class="author-input" placeholder="Credit the Image's Author" type="text">
-                        <input class="title-input" placeholder="Give the Image a Title" type="text">
-                        <input class="caption-input" placeholder="Jibber away about the Image" type="text">
-                        
-                        <input class="status" value="Post" type="submit">
-                    </form>
+                        <h1>Edit the Current Image</h1><h6>Remember to Input ALL information  </h6>
+                        <input class="url-input" placeholder="URL:" value="<%= url %>" type="text">
+                        <input class="author-input" placeholder="Author: " value="<%= author %>" type="text">
+                        <input class="title-input" placeholder="Title: " value="<%= title %>" type="text">
+                        <input class="caption-input" placeholder="Jibber: " value="<%= caption %>" type="text">
+                        <h1><div class="update-button button">Update Fields</div></h1>
+                </div>
+                <div class="add-new-image-input">
+                        <h1>Add a New Image</h1><h6>Clear the fields before you begin</h6> 
+                        <input class="url-input-add" placeholder="Insert the Image URL" type="text">
+                        <input class="author-input-add" placeholder="Credit the Image's Author" type="text">
+                        <input class="title-input-add" placeholder="Give the Image a Title" type="text">
+                        <input class="caption-input-add" placeholder="Jibber away about the Image" type="text">
+                        <h1><div class="post-button button">Post Image</div><div class="clear-button button">Clear Fields</div></h1>
                 </div>   
             </div>
 
         </script>
- 
+
+
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>

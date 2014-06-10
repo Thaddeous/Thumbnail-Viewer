@@ -25,3 +25,14 @@ var PhotoCollection = Backbone.Collection.extend({
   // this URL links us to the server. This I believe is where we will be uploading our data
   url: 'http://tiny-pizza-server.herokuapp.com/collections/tad-thumbnails'
 })
+
+
+
+
+// CoolView = Backbone.View.extend({
+// 	events: {
+
+// 		"click.button": "saveData"
+// 	}
+
+// })

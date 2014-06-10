@@ -3,11 +3,10 @@ var DetailView = Backbone.View.extend({
   className: 'detail-view',
   template: _.template($('.detail-view-template').text()),
   events: {
-    "click .save-button": "updateModel",
-    "click .new-button": "createPhoto"
+    "click .update-button": "updateModel",
+    "click .post-button": "createPhoto",
+    "click .clear-button": "clearFields"
   },
-
-
 
 
   initialize: function(){
@@ -23,9 +22,6 @@ var DetailView = Backbone.View.extend({
   },
 
 
-
-
-
   render: function(){
 
     var renderedTemplate = this.template(this.model.attributes);
@@ -34,44 +30,53 @@ var DetailView = Backbone.View.extend({
   },
 
 
-
-
-
   updateModel: function(){
 
     var that = this;
 
     this.model.set({
       url:      this.$el.find('.url-input').val(),
-      title:  this.$el.find('.title-input').val(),
-      caption:  this.$el.find('.caption-input').val(),
       author:  this.$el.find('.author-input').val(),
+      title:  this.$el.find('.title-input').val(),
+      caption:  this.$el.find('.caption-input').val()
     });
 
     photos.add(this.model)
 
     this.model.save().done(function(){
-      that.$el.find('.status').html('Saved!')
+      that.$el.find('.clear-button').html('Saved!')
     })
   },
 
 
 
-
-
-  createPhoto: function(){
+  clearFields: function(){
 
     var photoInstance = new Photo();
 
     this.model = photoInstance
 
     this.$el.find('input').val('');
-    this.$el.find('img').attr('src',' http://placehold.it/350x400');
+    this.$el.find('img').attr('src',' http://placehold.it/700X350');
 
+  },
+
+
+   createPhoto: function(){
+
+    var that = this;
+
+    this.model.set({
+      url:      this.$el.find('.url-input-add').val(),
+      author:  this.$el.find('.author-input-add').val(),
+      title:  this.$el.find('.title-input-add').val(),
+      caption:  this.$el.find('.caption-input-add').val()
+    });
+
+    photos.add(this.model)
+
+    this.model.save().done(function(){
+      that.$el.find('.post-button-add').html('Saved!')
+    })
   }
 })
-
-
-
-
-
