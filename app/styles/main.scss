@@ -8,7 +8,6 @@ body {
     padding: 0;
     margin: 0;
 }
-
 .main-body {
     padding: 5px;
     margin: 0 auto;
@@ -20,42 +19,32 @@ body {
     color: #000;
     padding: 0.2em 0;
 }
-
 .top-banner {
     width: 100%;
     height: 69px;
     color: #ffffff;
     padding-top: 14px;
     padding-left: 15px;
-    margin-bottom: 10px;
-    /* IE10 Consumer Preview */ 
-    background-image: -ms-linear-gradient(bottom, #E51812 0%, #99100C 100%);
-    /* Mozilla Firefox */ 
-    background-image: -moz-linear-gradient(bottom, #E51812 0%, #99100C 100%);
-    /* Opera */ 
-    background-image: -o-linear-gradient(bottom, #E51812 0%, #99100C 100%);
-    /* Webkit (Safari/Chrome 10) */ 
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #E51812), color-stop(1, #99100C));
-    /* Webkit (Chrome 11+) */ 
-    background-image: -webkit-linear-gradient(bottom, #E51812 0%, #99100C 100%);
-    /* W3C Markup, IE10 Release Preview */ 
+    margin-bottom: 10px; /* IE10 Consumer Preview */
+    background-image: -ms-linear-gradient(bottom, #E51812 0%, #99100C 100%); /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, #E51812 0%, #99100C 100%); /* Opera */
+    background-image: -o-linear-gradient(bottom, #E51812 0%, #99100C 100%); /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #E51812), color-stop(1, #99100C)); /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, #E51812 0%, #99100C 100%); /* W3C Markup, IE10 Release Preview */
     background-image: linear-gradient(to top, #E51812 0%, #99100C 100%);
     border-bottom: 1px solid #AB120E;
     box-shadow: 0px 0px 4px #000000;
 }
-
 .hopper {
     display: inline;
     float: left;
     margin-top: -7px;
     padding: 0px;
 }
-
 .hopper img {
     margin: 0px;
-    padding: 0px;   
+    padding: 0px;
 }
-
 .hopperTitle {
     display: inline;
     float: left;
@@ -64,7 +53,6 @@ body {
     margin-top: -19px;
     margin-right: 5px;
 }
-
 .log-in {
     display: inline-block;
     float: right;
@@ -72,33 +60,27 @@ body {
     font-size: 20px;
     margin-top: 29px;
 }
-
 .log-in a {
     display: inline-block;
     color: #ffffff;
     text-decoration: none;
     margin: 0px;
     padding: 0px;
-
 }
-
 .log-in:hover {
     text-shadow: 0px 0px 2px #ffffff;
 }
-
 .left-container {
     float: left;
     width: 48%;
     height: auto;
     margin-left: 12px;
 }
-
 .image-container {
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
 }
-
 .red-container {
     text-align: left;
     height: auto;
@@ -106,18 +88,15 @@ body {
     background-color: #BF140F;
     border-radius: 0px 0px 6px 6px;
 }
-
 .red-container img {
     margin-top: 0px;
     margin-bottom: 0px;
     padding-bottom: 0px;
     box-shadow: 0px 0px 6px #000000;
 }
-
 .spacing {
     padding: 10px;
 }
-
 .author-box {
     color: #ffffff;
     height: auto;
@@ -126,7 +105,6 @@ body {
     margin-top: -4px;
     padding-bottom: 7px;
 }
-
 .title-box, .caption-box {
     border-top: 2px solid #99100C;
     color: #ffffff;
@@ -136,12 +114,10 @@ body {
     padding-top: 7px;
     padding-bottom: 7px;
 }
-
 .red-container strong {
     color: #f5f5f5;
     letter-spacing: 0.8px;
 }
-
 .add-image-input, .add-new-image-input {
     color: #BF140F;
     text-align: left;
@@ -152,7 +128,6 @@ body {
     padding: 10px;
     box-shadow: 1px 1px 3px #dddddd;
 }
-
 .add-image-input h1, .add-new-image-input h1 {
     margin-right: 6px;
     margin-left: 3px;
@@ -160,7 +135,6 @@ body {
     margin-bottom: 2px;
     padding: 0px;
 }
-
 .add-image-input h6, .add-new-image-input h6 {
     margin-right: 6px;
     margin-left: 4px;
@@ -168,7 +142,6 @@ body {
     margin-bottom: 12px;
     padding: 0px;
 }
-
 .add-image-input h3, .add-new-image-input h3 {
     margin-right: 6px;
     margin-left: 5px;
@@ -176,7 +149,6 @@ body {
     margin-bottom: 2px;
     padding: 0px;
 }
-
 .title-holder {
     height: 30px;
     width: 11%;
@@ -184,14 +156,11 @@ body {
     padding: 0;
     display: inline-block;
 }
-
-
 .input-text {
     font-size: 22px;
     margin: 0;
     padding: 0;
 }
-
 .url-input, .author-input, .title-input, .caption-input, .url-input-add, .author-input-add, .title-input-add, .caption-input-add {
     height: 30px;
     width: 87%;
@@ -204,7 +173,6 @@ body {
     margin-bottom: 6px;
     display: inline;
 }
-
 .button {
     width: 115px;
     height: 40px;
@@ -220,50 +188,42 @@ body {
     text-decoration: none;
     line-height: 40px;
 }
-
 .button:hover {
     box-shadow: 0px 0px 2px #333333;
 }
-
 .update-button, .clear-button, .post-button {
     float: right;
     margin-left: 10px;
     margin-top: 3px;
 }
-
 .right-container {
     float: left;
-    width: 51%; 
+    width: 51%;
     height: auto;
     height: 950px;
     overflow: scroll;
 }
-
 .thumbnail {
     display: inline;
 }
-
-@media screen and (max-width: 1210px) {
-
+@media screen and (max-width:1210px) {
     .left-container {
         width: 99%;
         text-align: center;
         margin: 0 auto;
     }
-
-     .right-container {
+    .right-container {
         width: 99%;
         text-align: center;
         margin: 0 auto;
     }
-
     .caption-input {
         width: 98%;
     }
-
     .status {
         margin-top: 5px;
         width: 99%;
     }
-} /* media query dude 500px */
+}
 
+/* media query dude 500px */

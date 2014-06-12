@@ -41,4 +41,3 @@ var ThumbnailView = Backbone.View.extend({
     detailInstance = new DetailView({model: this.model})
   }
 })
-

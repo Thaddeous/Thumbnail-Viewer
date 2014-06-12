@@ -9,16 +9,5 @@ var photos = new PhotoCollection();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 	// app = new AppRouter()
 	// Backbone.history.start();
